@@ -1,0 +1,6 @@
+# Robots.txt for Smart poing
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://akhilsivanand5000.github.io/smart-poing-mo6s63x6/sitemap.xml

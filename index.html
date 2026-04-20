@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Smart poing</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Smart poing - Get fresh food at your convenience. Erumely">
+  <meta name="keywords" content="Smart poing, retail, All food products, vegitables and fruits">
+  <meta name="author" content="Smart poing">
+  <meta name="robots" content="index, follow">
+  
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Home | Smart poing">
+  <meta property="og:description" content="Smart poing - Get fresh food at your convenience. Erumely">
+  <meta property="og:site_name" content="Smart poing">
+  
+  
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Home | Smart poing">
+  <meta name="twitter:description" content="Smart poing - Get fresh food at your convenience. Erumely">
+  
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Smart poing",
+  "description": "Get fresh food at your convenience",
+  "telephone": "9633067710",
+  "email": "",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Erumely"
+  }
+}
+  </script>
+  
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            serif: ['Playfair Display', 'Georgia', 'serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .animate-fade-in { animation: fadeIn 0.6s ease-out; }
+    .animate-slide-up { animation: slideUp 0.6s ease-out; }
+    .animate-scale-in { animation: scaleIn 0.5s ease-out; }
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes slideUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes scaleIn { from { opacity: 0; transform: scale(0.95); } to { opacity: 1; transform: scale(1); } }
+    .hover-lift { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .hover-lift:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(0,0,0,0.15); }
+    /* Skip link for accessibility */
+    .skip-link { position: absolute; left: -9999px; top: 0; z-index: 100000; padding: 8px 16px; background: #111; color: #fff; border-radius: 0 0 8px 0; }
+    .skip-link:focus { left: 0; }
+    /* Mobile menu helper: [data-mobile-menu] is hidden by default, shown when [data-mobile-menu-open] */
+    [data-mobile-menu] { display: none; }
+    [data-mobile-menu-open] [data-mobile-menu] { display: block; }
+  </style>
+<link rel="preload" as="style" href="styles.css"><link rel="stylesheet" href="styles.css"></head>
+<body class="bg-zinc-900 text-white">
+<a href="#main-content" class="skip-link">Skip to main content</a>
+<nav class="fixed w-full z-50 bg-zinc-900/90 backdrop-blur-md border-b border-zinc-800 transition-all duration-300">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-20">
+      <!-- Logo -->
+      <div class="flex-shrink-0 flex items-center gap-3">
+        <div class="w-10 h-10 rounded-full bg-gradient-to-br from-red-600 to-orange-500 flex items-center justify-center text-white font-black text-xl shadow-lg shadow-red-500/20">
+          SP
+        </div>
+        <a href="index.html" class="font-black text-2xl tracking-tight text-white hover:opacity-80 transition-opacity">
+          Smart poing
+        </a>
+      </div>
+
+      <!-- Desktop Menu -->
+      <div class="hidden md:flex items-center space-x-8">
+        <a href="index.html" class="text-zinc-100 font-medium hover:text-orange-500 transition-colors">Home</a>
+        <a href="about.html" class="text-zinc-400 font-medium hover:text-orange-500 transition-colors">About</a>
+        <a href="contact.html" class="text-zinc-400 font-medium hover:text-orange-500 transition-colors">Contact</a>
+        <a href="contact.html" class="px-5 py-2.5 rounded-full text-white font-bold text-sm tracking-wide shadow-lg hover:scale-105 transition-transform" style="background-color: #000000; border: 1px solid rgba(249, 115, 22, 0.5);">
+          Visit Us
+        </a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <div class="md:hidden flex items-center">
+        <button type="button" data-menu-toggle aria-label="Toggle menu" aria-expanded="false" class="text-zinc-300 hover:text-white focus:outline-none">
+          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div data-mobile-menu class="md:hidden absolute w-full bg-zinc-900 border-b border-zinc-800 shadow-2xl origin-top transform transition-all duration-300" style="display: none;">
+    <div class="px-4 pt-2 pb-6 space-y-2 shadow-xl">
+      <a href="index.html" class="block px-3 py-3 rounded-lg text-base font-medium text-white bg-zinc-800/50">Home</a>
+      <a href="about.html" class="block px-3 py-3 rounded-lg text-base font-medium text-zinc-400 hover:text-white hover:bg-zinc-800 transition-colors">About</a>
+      <a href="contact.html" class="block px-3 py-3 rounded-lg text-base font-medium text-zinc-400 hover:text-white hover:bg-zinc-800 transition-colors">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<main id="main-content" tabindex="-1" class="bg-zinc-900">
+  
+  <!-- HERO SECTION -->
+  <section class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden bg-zinc-900">
+    <!-- Grid Pattern Background -->
+    <div class="absolute inset-0 bg-[linear-gradient(to_right,#ffffff0a_1px,transparent_1px),linear-gradient(to_bottom,#ffffff0a_1px,transparent_1px)] bg-[size:32px_32px]"></div>
+    
+    <!-- Decorative Blurred Blobs -->
+    <div class="absolute top-1/4 -left-64 w-96 h-96 bg-red-600 rounded-full mix-blend-screen filter blur-[128px] opacity-30 animate-pulse"></div>
+    <div class="absolute bottom-1/4 -right-64 w-96 h-96 bg-orange-600 rounded-full mix-blend-screen filter blur-[128px] opacity-20"></div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center flex flex-col items-center">
+      <!-- Monogram Badge -->
+      <div class="w-32 h-32 md:w-40 md:h-40 rounded-full bg-gradient-to-br from-red-600 via-orange-500 to-yellow-500 flex items-center justify-center text-5xl md:text-7xl font-black text-white shadow-[0_0_60px_-15px_rgba(234,88,12,0.5)] mb-12 transform hover:rotate-12 transition-transform duration-500">
+        SP
+      </div>
+
+      <h1 class="text-6xl sm:text-7xl md:text-8xl font-black text-white tracking-tighter mb-6 leading-none">
+        Smart <span class="bg-clip-text text-transparent bg-gradient-to-r from-red-500 to-orange-500">poing</span>
+      </h1>
+      
+      <p class="mt-4 text-3xl sm:text-4xl md:text-5xl font-extrabold text-zinc-300 tracking-tight max-w-4xl mx-auto mb-8">
+        Get fresh food at your convenience.
+      </p>
+      
+      <p class="text-lg md:text-xl text-zinc-400 max-w-2xl mx-auto mb-12 leading-relaxed">
+        A quality local business in Erumely dedicated to providing you with the finest selection of all food products, crisp vegetables, and premium fruits.
+      </p>
+      
+      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <a href="contact.html" class="group relative px-8 py-4 bg-gradient-to-r from-red-600 to-orange-600 rounded-full font-bold text-white text-lg overflow-hidden shadow-[0_0_40px_-10px_rgba(220,38,38,0.5)] hover:scale-105 transition-all duration-300">
+          <span class="relative z-10 flex items-center gap-2">
+            Visit Our Store
+            <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+          </span>
+        </a>
+        <a href="about.html" class="px-8 py-4 rounded-full font-bold text-white text-lg border border-zinc-700 hover:bg-zinc-800 hover:text-orange-400 transition-colors duration-300">
+          Learn More
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES SECTION -->
+  <section class="relative py-32 bg-zinc-950 overflow-hidden" id="features">
+    <!-- Top accent line -->
+    <div class="absolute top-0 w-full h-px bg-gradient-to-r from-transparent via-orange-500/50 to-transparent"></div>
+    
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="text-center mb-20">
+        <h2 class="text-4xl md:text-6xl font-black text-white tracking-tight mb-4">Why Choose Us</h2>
+        <div class="w-24 h-1 bg-gradient-to-r from-red-600 to-orange-500 mx-auto rounded-full"></div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Feature 1 -->
+        <div class="group p-8 rounded-3xl border border-zinc-800 hover:-translate-y-3 transition-all duration-300 relative overflow-hidden shadow-2xl" style="background-color: #000000;">
+          <div class="absolute top-0 right-0 w-32 h-32 bg-red-600/10 rounded-full blur-2xl group-hover:bg-red-600/20 transition-colors"></div>
+          <div class="w-16 h-16 rounded-2xl bg-zinc-900 border border-zinc-800 flex items-center justify-center text-3xl mb-6 shadow-inner group-hover:border-red-500/50 transition-colors">
+            🥬
+          </div>
+          <h3 class="text-2xl font-bold text-white mb-3 tracking-tight">Fresh Vegetables</h3>
+          <p class="text-zinc-400 leading-relaxed">
+            Daily sourced, crisp, and vibrant vegetables ensuring the highest nutritional value for your family's meals.
+          </p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="group p-8 rounded-3xl border border-zinc-800 hover:-translate-y-3 transition-all duration-300 relative overflow-hidden shadow-2xl" style="background-color: #000000;">
+          <div class="absolute top-0 right-0 w-32 h-32 bg-orange-600/10 rounded-full blur-2xl group-hover:bg-orange-600/20 transition-colors"></div>
+          <div class="w-16 h-16 rounded-2xl bg-zinc-900 border border-zinc-800 flex items-center justify-center text-3xl mb-6 shadow-inner group-hover:border-orange-500/50 transition-colors">
+            🍎
+          </div>
+          <h3 class="text-2xl font-bold text-white mb-3 tracking-tight">Premium Fruits</h3>
+          <p class="text-zinc-400 leading-relaxed">
+            Hand-selected seasonal fruits guaranteeing maximum sweetness, freshness, and quality in every single bite.
+          </p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="group p-8 rounded-3xl border border-zinc-800 hover:-translate-y-3 transition-all duration-300 relative overflow-hidden shadow-2xl" style="background-color: #000000;">
+          <div class="absolute top-0 right-0 w-32 h-32 bg-yellow-500/10 rounded-full blur-2xl group-hover:bg-yellow-500/20 transition-colors"></div>
+          <div class="w-16 h-16 rounded-2xl bg-zinc-900 border border-zinc-800 flex items-center justify-center text-3xl mb-6 shadow-inner group-hover:border-yellow-500/50 transition-colors">
+            🛒
+          </div>
+          <h3 class="text-2xl font-bold text-white mb-3 tracking-tight">All Groceries</h3>
+          <p class="text-zinc-400 leading-relaxed">
+            A comprehensive selection of quality food products, making us your ultimate convenient local shopping destination.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HIGHLIGHTS SECTION -->
+  <section class="py-32 relative bg-zinc-900">
+    <div class="absolute right-0 top-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-bl from-zinc-800/50 to-transparent rounded-full blur-3xl -z-10 pointer-events-none"></div>
+    
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col lg:flex-row items-center gap-16">
+        
+        <div class="w-full lg:w-1/2">
+          <div class="inline-block px-4 py-1.5 rounded-full border border-orange-500/30 bg-orange-500/10 text-orange-400 font-semibold text-sm tracking-wide mb-6">
+            Erumely's Finest
+          </div>
+          <h2 class="text-5xl md:text-7xl font-black text-white tracking-tighter mb-8 leading-[1.1]">
+            A Quality <br/>
+            <span class="bg-clip-text text-transparent bg-gradient-to-r from-red-500 to-orange-500">Local Business.</span>
+          </h2>
+          <p class="text-xl text-zinc-400 mb-10 max-w-lg leading-relaxed">
+            We take pride in serving the Erumely community. Our commitment is to provide unmatched convenience without ever compromising on the freshness and quality of our food products.
+          </p>
+          
+          <ul class="space-y-6">
+            <li class="flex items-center gap-4 text-zinc-200 font-bold text-xl">
+              <span class="flex-shrink-0 w-8 h-8 rounded-full bg-red-600/20 flex items-center justify-center text-red-500">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+              </span>
+              Extensive range of food items
+            </li>
+            <li class="flex items-center gap-4 text-zinc-200 font-bold text-xl">
+              <span class="flex-shrink-0 w-8 h-8 rounded-full bg-orange-500/20 flex items-center justify-center text-orange-500">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+              </span>
+              Farm-fresh produce daily
+            </li>
+            <li class="flex items-center gap-4 text-zinc-200 font-bold text-xl">
+              <span class="flex-shrink-0 w-8 h-8 rounded-full bg-yellow-500/20 flex items-center justify-center text-yellow-500">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+              </span>
+              Convenient local location
+            </li>
+          </ul>
+        </div>
+
+        <!-- Typographic Visual Anchor (Instead of Image) -->
+        <div class="w-full lg:w-1/2 relative flex justify-center items-center">
+          <div class="relative w-full max-w-md aspect-square rounded-full border border-zinc-800 flex items-center justify-center p-8">
+            <div class="absolute inset-0 border border-zinc-700/50 rounded-full scale-110"></div>
+            <div class="absolute inset-0 border border-zinc-800/30 rounded-full scale-125"></div>
+            
+            <div class="w-full h-full rounded-full bg-zinc-950 flex flex-col items-center justify-center text-center p-10 shadow-2xl relative overflow-hidden" style="background-color: #000000;">
+              <!-- Inner gradient glow -->
+              <div class="absolute inset-0 bg-gradient-to-tr from-red-900/20 to-orange-900/20"></div>
+              
+              <div class="relative z-10">
+                <span class="block text-8xl font-black bg-clip-text text-transparent bg-gradient-to-br from-zinc-100 to-zinc-500 tracking-tighter mb-2">100%</span>
+                <span class="block text-2xl font-bold text-orange-500 tracking-widest uppercase">Freshness</span>
+                <span class="block mt-4 text-zinc-400 text-sm font-medium">GUARANTEED QUALITY</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA SECTION -->
+  <section class="py-12 sm:py-24 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-6xl mx-auto rounded-[3rem] overflow-hidden relative shadow-2xl">
+      <!-- Deep gradient background -->
+      <div class="absolute inset-0 bg-gradient-to-r from-red-600 via-orange-600 to-yellow-600"></div>
+      <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjgiPgo8cmVjdCB3aWR0aD0iOCIgaGVpZ2h0PSI4IiBmaWxsPSIjZmZmIiBmaWxsLW9wYWNpdHk9IjAuMDUiLz4KPC
+<script>
+  // Mobile menu toggle — works with any nav that uses [data-menu-toggle] and [data-mobile-menu]
+  (function() {
+    document.addEventListener('click', function(e) {
+      var toggle = e.target.closest('[data-menu-toggle]');
+      if (toggle) {
+        e.preventDefault();
+        var root = toggle.closest('nav') || document.body;
+        var isOpen = root.hasAttribute('data-mobile-menu-open');
+        if (isOpen) {
+          root.removeAttribute('data-mobile-menu-open');
+          toggle.setAttribute('aria-expanded', 'false');
+        } else {
+          root.setAttribute('data-mobile-menu-open', '');
+          toggle.setAttribute('aria-expanded', 'true');
+        }
+        return;
+      }
+      // Close menu when clicking a link inside it
+      var link = e.target.closest('[data-mobile-menu] a');
+      if (link) {
+        var menu = link.closest('nav') || document.body;
+        menu.removeAttribute('data-mobile-menu-open');
+        var t = menu.querySelector('[data-menu-toggle]');
+        if (t) t.setAttribute('aria-expanded', 'false');
+      }
+    });
+  })();
+</script>
+</body>
+</html>
